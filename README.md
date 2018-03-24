@@ -21,3 +21,18 @@ add express to run from build dir
 ``` node
 node / nodemone server.js
 ```
+
+### firebase
+
+add firebase account kassadubes@gmail.com
+
+``` node
+npm install -g firebase-tools
+firebase login
+firebase init
+```
+to deploy 
+
+``` node
+firebase deploy
+```
