@@ -36,3 +36,9 @@ to deploy
 ``` node
 firebase deploy
 ```
+
+## github
+
+npm install --save gh-pages
+
+https://kassadube.github.io/react-base-site/
