@@ -52,3 +52,9 @@ https://kassadube.github.io/react-base-site/
 npm install netlify-cli -g
 netlify deploy
 ```
+
+## Now
+
+npm install -g now
+account : kassadubes@gmail.com
+Run now --name react-base-site
