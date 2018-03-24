@@ -41,5 +41,14 @@ https://react-start-93b26.firebaseapp.com/
 ## github
 
 npm install --save gh-pages
-
+add "homepage": "https://kassadube.github.io/react-base-site",
+to package json
 https://kassadube.github.io/react-base-site/
+
+
+## netlify
+
+``` npm
+npm install netlify-cli -g
+netlify deploy
+```

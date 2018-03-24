@@ -1,7 +1,6 @@
 {
   "name": "react-base-site",
   "version": "0.1.0",
-  "homepage": "https://kassadube.github.io/react-base-site",
   "private": true,
   "scripts": {
     "start:build": "node server.js",
