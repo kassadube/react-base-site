@@ -15,3 +15,9 @@ Run this command to get a full list of the options available:
 ``` node
 serve -h
 ```
+
+add express to run from build dir
+
+``` node
+node / nodemone server.js
+```
