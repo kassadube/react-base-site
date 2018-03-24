@@ -14,9 +14,17 @@
   },
   "dependencies": {
     "gh-pages": "^1.1.0",
+    "history": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "next",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "sanitize.css": "^5.0.0"
   },
   "devDependencies": {
     "express": "^4.16.3",

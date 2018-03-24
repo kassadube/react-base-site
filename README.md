@@ -58,3 +58,8 @@ netlify deploy
 npm install -g now
 account : kassadubes@gmail.com
 Run now --name react-base-site
+
+
+# Redux router
+
+yarn add redux react-redux react-router-dom react-router-redux redux-thunk history redux-devtools-extension
