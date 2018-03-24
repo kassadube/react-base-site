@@ -36,6 +36,7 @@ to deploy
 ``` node
 firebase deploy
 ```
+https://react-start-93b26.firebaseapp.com/
 
 ## github
 
