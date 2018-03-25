@@ -7,9 +7,7 @@ import App from './containers/app'
 import 'sanitize.css/sanitize.css';
 import './index.css'
 
-
-//const target = document.querySelector('#root')
-
+//window.store = store;
 const Root  = ()=> (
   <Provider store={store}>
     <ConnectedRouter history={history}>
