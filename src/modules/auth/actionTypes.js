@@ -1,5 +1,5 @@
 import {NAME} from './constants';
 
-export const FETCH_RESOURCE_REQUEST = `${NAME}/fetch_resource_request`;
-export const FETCH_RESOURCE_SUCCESS = `${NAME}/fetch_resource_success`;
-export const FETCH_RESOURCE_FAILURE = `${NAME}/fetch_resource_failure`;
+export const AUTH_USER = `${NAME}/auth_user`;
+export const UNAUTH_USER = `${NAME}/unauth_user`;
+export const AUTH_ERROR = `${NAME}/auth_error`;

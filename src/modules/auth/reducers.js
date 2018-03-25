@@ -1,29 +1,28 @@
+import axios from 'axios';
+
 import * as types from './actionTypes';
 
 const init = {
-    data:{},
+    authenticated: false,
     error: '',
-    isFetching:false
 };
 
 export default (state = init, action) => {
 
     switch(action.type) {
-        case types.FETCH_RESOURCE_REQUEST:
-            return {...state, 'isFetching': true };
-        case types.FETCH_RESOURCE_SUCCESS:
-            return { 
-                ...state,
-                data: action.payload, // should be immutable object, from the action.
-                isFetching: false, 
-                error: '' 
-            };
-        case types.FETCH_RESOURCE_FAILURE:
-            return { 
-                ...state,
-                isFetching: false, 
-                error: action.payload 
-            };
+        
+        case types.AUTH_USER:
+            axios.defaults.headers.common['Authorization'] = `Bearer ${action.payload.token}`;
+            return {...state, authenticated: true, error: ''}; 
+
+        case types.UNAUTH_USER:
+            return {...state, authenticated: false};
+
+        case types.AUTH_ERROR:
+            return {...state, error: action.payload };
+
+        default:
+            return state;
     }
-    return state;
+  
 };
