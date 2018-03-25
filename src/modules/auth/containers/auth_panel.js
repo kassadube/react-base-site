@@ -20,7 +20,7 @@ class AuthPanel extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        debugger
+        
         if(nextProps.isAuthenticated)
         {
             this.props.changePage();
@@ -62,4 +62,4 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-export default connect(mapStateToProps, mapDispatchToProps)(AuthPanel);;
+export default connect(mapStateToProps, mapDispatchToProps)(AuthPanel);
