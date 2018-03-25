@@ -15,6 +15,7 @@ export const signinUser = (values) => {
             
             // - Update state to indicate user is authenticated
             dispatch({ type: types.AUTH_USER, payload: {token : response.data.token}});
+           
             // - Redirect to the route '/feature'
         })
         .catch(() => {
@@ -26,10 +27,15 @@ export const signinUser = (values) => {
     }
 }
 
+export const signoutUser = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('token-experation');
+    return { type: types.UNAUTH_USER };
+}
 
 export const authError = (error) => {
     return {
-        type:types.AUTH_ERROR,
+        type: types.AUTH_ERROR,
         payload: error
     }
 }
