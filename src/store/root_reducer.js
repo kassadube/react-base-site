@@ -4,5 +4,5 @@ import counter from '../modules/counter';
 
 export default combineReducers({
   routing: routerReducer,
-  counter
+  [counter.constants.NAME]: counter.reducers
 })
