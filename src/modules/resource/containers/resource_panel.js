@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
+// eslint-disable-next-line
 import PropTypes from 'prop-types';
 
 
-class Resource extends Component {
-    constructor (props) {
-        super(props)
-    }
-
+class ResourcePanel extends Component {
+   
     render() {
         return (
             <div className="messages-panel">
@@ -16,4 +14,7 @@ class Resource extends Component {
     }
 };
 
-export default Resource;
+ResourcePanel.propTypes = {
+    
+  };
+export default ResourcePanel;

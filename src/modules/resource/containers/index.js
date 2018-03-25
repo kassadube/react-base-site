@@ -1,3 +1,3 @@
-import Resource from './resource';
+import ResourcePanel  from './resource_panel';
 
-export default { Resource }
+export default { ResourcePanel }
