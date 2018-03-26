@@ -5,10 +5,24 @@ import PropTypes from 'prop-types';
 
 const AppHeader = () => (
     <header>
-      <Link to="/">Home</Link>
-      <Link to="/about-us">About</Link>
-      <Link to="/resource">Resource</Link>
-      <Link to="/login">Sign out</Link>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <Link to="/" className="navbar-link">Home</Link>
+            </li>
+            <li class="navbar-item">
+              <Link to="/about-us" className="navbar-link">About</Link>
+            </li>
+            <li class="navbar-item">
+              <Link to="/resource" className="navbar-link">Resource</Link>
+            </li>
+            <li class="navbar-item" >
+              <Link to="/login" className="navbar-link">Sign out</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 );
 

@@ -19,7 +19,7 @@ if(token)
 const Root  = ()=> (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <div className="container">
         <AppLayout />
       </div>
     </ConnectedRouter>
