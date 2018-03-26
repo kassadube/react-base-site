@@ -1,0 +1,5 @@
+import {NAME} from './constants';
+
+export const AUTH_USER = `${NAME}/auth_user`;
+export const UNAUTH_USER = `${NAME}/unauth_user`;
+export const AUTH_ERROR = `${NAME}/auth_error`;

@@ -5,4 +5,4 @@ import * as selectors from './selectors';
 import reducers from './reducers';
 import containers from './containers';
 
-export default { constants, actionsTypes, actions, reducers, selectors, containers };
+export default { constants, actionsTypes, actions, reducers , selectors, containers };

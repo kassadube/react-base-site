@@ -24,6 +24,8 @@ export default (state = init, action) => {
                 isFetching: false, 
                 error: action.payload 
             };
+        default :
+            return state;
     }
-    return state;
+   
 };
