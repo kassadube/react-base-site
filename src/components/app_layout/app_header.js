@@ -8,6 +8,7 @@ const AppHeader = () => (
       <Link to="/">Home</Link>
       <Link to="/about-us">About</Link>
       <Link to="/resource">Resource</Link>
+      <Link to="/login">Sign out</Link>
     </header>
 );
 
