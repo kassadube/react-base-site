@@ -8,6 +8,7 @@ import About from '../about';
 import resource from '../../modules/resource';
 import auth from '../../modules/auth';
 import PrivateRoute from './private_route';
+import MainLayout from './main_layout';
 
 const {ResourcePanel} = resource.containers;
 const {AuthPanel} = auth.containers;
@@ -15,10 +16,10 @@ const {AuthPanel} = auth.containers;
 const MainPanel = () => (
     <main>
        <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={AuthPanel} />
-        <Route exact path="/about-us" component={About} />
-        <PrivateRoute exact path="/resource" component={ResourcePanel} />
+        <PrivateRoute exact path="/" component={()=>(<MainLayout><Home/></MainLayout>)} />
+        <PrivateRoute exact path="/about-us" component={()=>(<MainLayout><About/></MainLayout>)}/>
+        <PrivateRoute exact path="/resource" component={()=>(<MainLayout><ResourcePanel/></MainLayout>)} />
+        <Route exact path="/login" component={AuthPanel} /> 
       </Switch>
     </main>
 );
