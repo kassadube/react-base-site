@@ -6,7 +6,8 @@ import AppLayout from './components/app_layout'
 import auth from './modules/auth'; 
 
 import 'sanitize.css/sanitize.css';
-import './index.css'
+import './skeleton.css';
+import './index.css';
 
 const { AUTH_USER } = auth.actionsTypes;
 const token = localStorage.getItem('token');
