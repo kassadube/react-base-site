@@ -14,7 +14,7 @@ const token = localStorage.getItem('token');
 if(token) 
     store.dispatch({ type: AUTH_USER ,payload: {token}});
 
-//window.store = store;
+window.store = store;
 const Root  = ()=> (
   <Provider store={store}>
     <ConnectedRouter history={history}>

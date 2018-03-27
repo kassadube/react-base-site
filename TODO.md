@@ -7,4 +7,5 @@
     * ~~pureCSS~~
 * add rxjs
 * add epics
+* add immutable
 * add graph server/client

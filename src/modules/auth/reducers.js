@@ -11,6 +11,9 @@ export default (state = init, action) => {
 
     switch(action.type) {
         
+        case types.HELLO_WORLD_END:
+           return {...state, 'helloWorld' :action.payload};
+       
         case types.AUTH_USER:
             axios.defaults.headers.common['Authorization'] = `Bearer ${action.payload.token}`;
             return {...state, authenticated: true, error: ''}; 

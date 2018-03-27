@@ -13,6 +13,7 @@ class AuthPanel extends Component {
         super(props);
         this.submit = this.submit.bind(this);
         this.props.signoutUser();
+       // this.props.helloWorld();
     }
 
     submit(form) {
@@ -57,6 +58,7 @@ const mapDispatchToProps = dispatch =>
     {
       signinUser: actions.signinUser,
       signoutUser: actions.signoutUser,
+      //helloWorld:actions.helloWorldAction,
       changePage: () => push('/')
     },
     dispatch

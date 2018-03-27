@@ -39,3 +39,8 @@ export const authError = (error) => {
         payload: error
     }
 }
+
+export const helloWorldAction = () => {
+    
+    return { type: types.HELLO_WORLD };
+}
