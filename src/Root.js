@@ -6,7 +6,8 @@ import AppLayout from './components/app_layout'
 import auth from './modules/auth'; 
 
 import 'sanitize.css/sanitize.css';
-import './index.css'
+import './pure-min.css';
+import './index.css';
 
 const { AUTH_USER } = auth.actionsTypes;
 const token = localStorage.getItem('token');
@@ -18,7 +19,7 @@ if(token)
 const Root  = ()=> (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <div class="container">
         <AppLayout />
       </div>
     </ConnectedRouter>

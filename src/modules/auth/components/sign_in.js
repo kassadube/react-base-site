@@ -40,11 +40,21 @@ class SignIn extends React.Component {
         }
         return (
                 <div>
-                    <form onSubmit={this.submit}>
-                        <div><span>User</span><span><input type="text" name="username" onChange={this.handleInputChange}/> </span></div>
-                        <div><span>Password</span><span><input type="password" name="password" onChange={this.handleInputChange}/> </span></div>
-                        {error}
-                        <div><button type="submit">Send</button></div>
+                    <form onSubmit={this.submit} class="pure-form pure-form-aligned">
+                        <fieldset>
+                            <div class="pure-control-group">
+                                <label for="username">User</label>
+                                <input type="text" name="username" onChange={this.handleInputChange}/> 
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" onChange={this.handleInputChange}/>
+                            </div>
+                            <div class="pure-control-group">{error}</div>
+                            <div class="pure-control">
+                                <div style={{'margin-left': '170px'}}><button type="submit" class="pure-button pure-button-primary">Send</button></div>
+                            </div>
+                        </fieldset>
                     </form>    
                 </div>
             );
