@@ -27,6 +27,12 @@ export const signinUser = (values) => {
     }
 }
 
+export const signinUser_ACTION = (values) => {
+    return {
+        type: types.AUTH_USER,
+        payload: values
+    }
+}
 export const signoutUser = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('token-experation');

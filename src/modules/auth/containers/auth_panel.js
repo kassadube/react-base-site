@@ -56,7 +56,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      signinUser: actions.signinUser,
+      signinUser: actions.signinUser_ACTION,
       signoutUser: actions.signoutUser,
       //helloWorld:actions.helloWorldAction,
       changePage: () => push('/')

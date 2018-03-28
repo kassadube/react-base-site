@@ -8,11 +8,11 @@ import auth from './modules/auth';
 import 'sanitize.css/sanitize.css';
 import './index.css'
 
-const { AUTH_USER } = auth.actionsTypes;
+const { AUTH_USER_SUCCESS} = auth.actionsTypes;
 const token = localStorage.getItem('token');
 
 if(token) 
-    store.dispatch({ type: AUTH_USER ,payload: {token}});
+    store.dispatch({ type: AUTH_USER_SUCCESS ,payload: {token}});
 
 window.store = store;
 const Root  = ()=> (
