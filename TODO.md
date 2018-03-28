@@ -5,7 +5,7 @@
 * ~~CSS FRAMEWORKS~~
     * ~~skeleton~~
     * ~~pureCSS~~
-* add rxjs
-* add epics
+* ~~add rxjs~~
+* ~~add epics~~
 * add immutable
 * add graph server/client

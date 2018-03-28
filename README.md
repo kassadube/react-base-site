@@ -1,6 +1,10 @@
 # react-base-site
 
-##Static Server
+## Git Commands
+
+add TAG
+ 
+## Static Server
 
 For environments using Node, the easiest way to handle this would be to install serve and let it handle the rest:
 ``` npm
