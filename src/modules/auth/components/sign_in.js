@@ -39,12 +39,22 @@ class SignIn extends React.Component {
             error = <div style={{color:'red'}}>{this.props.error}</div>;
         }
         return (
-                <div>
-                    <form onSubmit={this.submit}>
-                        <div><span>User</span><span><input type="text" name="username" onChange={this.handleInputChange}/> </span></div>
-                        <div><span>Password</span><span><input type="password" name="password" onChange={this.handleInputChange}/> </span></div>
-                        {error}
-                        <div><button type="submit">Send</button></div>
+                <div style={{'margin':"25rem 0 0 20%"}}>
+                    <form onSubmit={this.submit}>                        
+                        <div class="row">
+                            <div class="two columns"><label for="username">User</label></div>
+                            <div class="five columns"><input type="text" name="username" onChange={this.handleInputChange}/></div>
+                        </div>
+                        <div class="row">
+                             <div class="two columns"><label for="password">Password</label></div>
+                             <div class="five columns"><input type="password" name="password" onChange={this.handleInputChange}/></div>
+                        </div>
+                        <div class="row">
+                            {error}
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="button-primary">Send</button>
+                        </div>
                     </form>    
                 </div>
             );
