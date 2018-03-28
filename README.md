@@ -3,6 +3,9 @@
 ## Git Commands
 
 add TAG
+    git tag -a v0.1.1 -m " release v0.1.1"
+push tags
+    git push --tags
  
 ## Static Server
 
